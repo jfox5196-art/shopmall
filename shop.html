@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopMall — All Shops</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar-shops">
+    <div class="logo">Shop<span>Mall</span></div>
+    <div class="search-wrap">
+      <input type="text" placeholder="Search shops, products, categories..." />
+      <button class="search-btn">Search</button>
+    </div>
+    <div class="nav-btns">
+      <button class="btn-outline">Sign in</button>
+      <button class="btn-primary">Open your shop</button>
+    </div>
+  </nav>
+
+  <div class="mall-layout">
+
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-title">Categories</div>
+      <div class="cat-item active">&#128722; All shops</div>
+      <div class="cat-item">&#128084; Fashion</div>
+      <div class="cat-item">&#9917; Sports</div>
+      <div class="cat-item">&#128241; Electronics</div>
+      <div class="cat-item">&#128144; Beauty</div>
+      <div class="cat-item">&#127968; Home & living</div>
+      <div class="cat-item">&#127918; Gaming</div>
+      <div class="cat-item">&#127829; Food <span class="local-badge">Local</span></div>
+    </div>
+
+    <div class="shops-content">
+      <h2 class="page-title">All Shops</h2>
+      <div class="shops-grid">
+
+        <div class="shop-card">
+          <div class="shop-banner" style="background:#1a1535;">👗</div>
+          <div class="shop-info">
+            <h3>Zara Boutique</h3>
+            <p class="shop-cat">Fashion</p>
+            <div class="shop-meta">
+              <span class="rating">⭐ 4.9 <span class="reviews">(3,240)</span></span>
+              <span class="products">📦 142 products</span>
+            </div>
+            <div class="shop-value">
+              <span class="value-label">Shop value</span>
+              <span class="value-price">$14,570</span>
+            </div>
+            <button class="visit-btn">Visit Shop</button>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-banner" style="background:#0d1f35;">📱</div>
+          <div class="shop-info">
+            <h3>TechZone</h3>
+            <p class="shop-cat">Electronics</p>
+            <div class="shop-meta">
+              <span class="rating">⭐ 4.8 <span class="reviews">(1,890)</span></span>
+              <span class="products">📦 89 products</span>
+            </div>
+            <div class="shop-value">
+              <span class="value-label">Shop value</span>
+              <span class="value-price">$9,200</span>
+            </div>
+            <button class="visit-btn">Visit Shop</button>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-banner" style="background:#0d1f0d;">🍕</div>
+          <div class="shop-info">
+            <h3>Foodie Corner</h3>
+            <p class="shop-cat">Food 🇵🇰 Local</p>
+            <div class="shop-meta">
+              <span class="rating">⭐ 4.7 <span class="reviews">(980)</span></span>
+              <span class="products">📦 56 products</span>
+            </div>
+            <button class="visit-btn">Visit Shop</button>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-banner" style="background:#1f0d1a;">💄</div>
+          <div class="shop-info">
+            <h3>Glam Studio</h3>
+            <p class="shop-cat">Beauty</p>
+            <div class="shop-meta">
+              <span class="rating">⭐ 4.9 <span class="reviews">(2,100)</span></span>
+              <span class="products">📦 203 products</span>
+            </div>
+            <div class="shop-value">
+              <span class="value-label">Shop value</span>
+              <span class="value-price">$11,800</span>
+            </div>
+            <button class="visit-btn">Visit Shop</button>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-banner" style="background:#1a1a0d;">⚽</div>
+          <div class="shop-info">
+            <h3>SportsPro</h3>
+            <p class="shop-cat">Sports</p>
+            <div class="shop-meta">
+              <span class="rating">⭐ 4.6 <span class="reviews">(670)</span></span>
+              <span class="products">📦 78 products</span>
+            </div>
+            <div class="shop-value">
+              <span class="value-label">Shop value</span>
+              <span class="value-price">$3,500</span>
+            </div>
+            <button class="visit-btn">Visit Shop</button>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="shop-banner" style="background:#0d1a1a;">🎮</div>
+          <div class="shop-info">
+            <h3>GameVault</h3>
+            <p class="shop-cat">Gaming</p>
+            <div class="shop-meta">
+              <span class="rating">⭐ 4.8 <span class="reviews">(4,500)</span></span>
+              <span class="products">📦 312 products</span>
+            </div>
+            <div class="shop-value">
+              <span class="value-label">Shop value</span>
+              <span class="value-price">$18,900</span>
+            </div>
+            <button class="visit-btn">Visit Shop</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
